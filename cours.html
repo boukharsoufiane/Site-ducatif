@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1400px)" href="course.css" type="text/css" />
+    <link rel="stylesheet" href="course.css">
+    <title>Educatif</title>
+</head>
+<body>
+    <header>
+      <div id="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="logo">
+        <img src="img/LOGO.png" alt="logo">
+      </div>
+      <div id="logo2">
+        <img src="img/Group_2.png" alt="logo2">
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="#one">Variables et affectation</a></li>
+          <li><a href="#two">Conditions</a></li>
+        </ul>
+        <div class="menu">
+          <button onclick="bouclesList()" class="list-btn">Boucles</button>
+          <div id="myList1" class="menu-content">
+            <a href="#boucle-for" onclick="laBoucleFor()">La boucle for</a>
+            <a href="#boucle-while" onclick="laBoucleWhile()">La boucle while</a>
+            <a href="#boucle-imbriquees" onclick="lesBouclesImbriquees()">Les boucles imbriquées</a>
+          </div>
+          <button onclick="chaineCaracteres()" class="list-btn">Chaines de caractères</button>
+          <div id="myList2" class="menu-content">
+            <a href="#recherche-et-suppression" onclick="rechercherSupp()">Recherche et suppression</a>
+            <a href="#nombre-de-voyelles" onclick="nombreVoyelles()">Nombre de voyelles</a>
+          </div>
+
+          <button onclick="myTableau()" class="list-btn">Tableaux</button>
+          <div id="myList3" class="menu-content">
+            <a href="#tri-tableau" onclick="triTableau()">Tri</a>
+            <a href="#recherche-tableau" onclick="rechercheTab()">Recherche</a>
+          </div>
+        </div>
+        <ul>
+          <li><a href="#function">Fonctions</a></li>
+        </ul>
+      </div> 
+    </header>
+    <div class="container">
+          <div class="pages">
+            <div class="page zero">
+              <img src="img/shutterstock_1663886689_Converted.png" alt="img">
+              <h2>About us</h2>
+              <p>un site éducatif responsive proposant des exercices en JavaScript avec des solutions</p>
+              <div id="listTwo">
+                <div class="listeOne">
+                  <ul>
+                    <li>Permutation de deux nombres</li>
+                    <li>Valider une date</li>
+                    <li>Table de multiplication</li>
+                    <li>Devine le nombre !</li>
+                  </ul>
+                </div>
+                <div class="listOne">
+                  <ul>
+                    <li>Losange en étoiles</li>
+                    <li>Calculatrice</li>
+                    <li>Recherche et suppression dans une chaine</li>
+                    <li>Compter le nombre de voyelles dans une chaine</li>
+                  </ul>
+                </div>
+                <div class="listOne">
+                  <ul>
+                    <li>Tri d’un tableau</li>
+                    <li id="hidden">Recherche dans un tableau</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <button class="button" onClick="slide('next')">GET STARTED</button>
+              </div>
+            </div>
+            <div id="one" class="page one">
+              <div class="permuterNombre">
+                <p>Ecrire un script qui permute deux nombres saisis dans dans deux inputs</p>
+              </div>
+              <div class="nombres">
+                <img src="img/BG0.png" alt="bg1">
+                <h2>Permutation de deux nombres</h2>
+              </div>
+              <form class="forme" name="reverse">   
+                <input id="inp1" type="number" name="a" placeholder="Enter the number 1" />
+                <input id="inp2" type="number" name="b" placeholder="Enter the number 2"/>
+                <input id="inp3" type="button" value="PERMUTER" onClick="permuter()" />
+              </form>
+              <code id="code">
+                <p>
+                  function permuter(){<br>
+                    x=document.reverse.a.value;<br>
+                    document.reverse.a.value=document.reverse.b.value;<br>
+                    document.reverse.b.value=x;<br>
+                  }
+                </p>
+              </code>
+              <div>
+                <button id="btnOne" onClick="slide('prev')">Previous</button>
+                <button id="btnOneplus" onClick="slide('next')">Next</button>
+              </div>
+            </div>
+            <div id="two" class="page two" onload='document.form1.text1.focus()'>
+              <div class="Validation">
+                <p>Ecrire un script qui permet de saisir les trois champs d’une date et d’indiquer si la date est correcte ou non</p>
+              </div>
+              <h2 style="margin-top: -45%; font-size: 28px;color: #043D72 !important;">Valider une date</h2>
+              <img src="img/BG0.png" alt="bg1">
+              <div class="mail">
+                <form name="form1"> 
+                   <input type='text' name='text1' placeholder="Enter the date : DD/MM/YYYY"/></li>
+                </form>
+                <button id="mail" onclick="validatedate(document.form1.text1)">Valider</button>
+                <p id="para5"></p>
+              </div>
+              <code id="code2">
+                <p>
+                  function validatedate(inputText){ <br>
+                  var dateformat = /^(0?[1-9]|[12][0-9]|1[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;<br>
+                  // Match the date format through regular expression<br>
+                  if(inputText.value.match(dateformat))<br>
+                  {<br>
+                  // document.form1.text1.focus();<br>
+                  //Test which seperator is used '/' or '-'<br>
+                  var opera1 = inputText.value.split('/');<br>
+                  var opera2 = inputText.value.split('-');<br>
+                  lopera1 = opera1.length;<br>
+                  lopera2 = opera2.length;<br>
+                  // Extract the string into month, date and year<br>
+                  if (lopera1>1)<br>
+                  {<br>
+                  var pdate = inputText.value.split('/');<br>
+                  }<br>
+                  else if (lopera2>1)<br>
+                  {<br>
+                  var pdate = inputText.value.split('-');<br>
+                  }<br>
+                  var dd = parseInt(pdate[0]);<br>
+                  var mm  = parseInt(pdate[1]);<br>
+                  var yy = parseInt(pdate[2]);<br>
+                  // Create list of days of a month [assume there is no leap year by default]<br>
+                  var ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];<br>
+                  if (mm==1 || mm>2)<br>
+                  {<br>
+                  if (dd>ListofDays[mm-1])<br>
+                  {<br>
+                    document.getElementById('para5').innerHTML=('La date est incorrect');<br>
+                  }<br>
+                  else{<br>
+                    document.getElementById('para5').innerHTML=('La date est :' + dd + "/" + mm + "/" + yy);<br>
+                  }<br>
+                  }<br>
+                  if (mm==2)<br>
+                  {<br>
+                  var lyear = false;<br>
+                  if ( (!(yy % 4) && yy % 100) || !(yy % 400)) <br>
+                  {<br>
+                  lyear = true;<br>
+                  }<br>
+                  if ((lyear==false) && (dd>=29))<br>
+                  {<br>
+                    document.getElementById('para5').innerHTML=('La date est :' + dd + "/" + mm + "/" + yy);<br>
+                  }<br>
+                  else{<br>
+                    document.getElementById('para5').innerHTML=('La date est :' + dd + "/" + mm + "/" + yy);<br>
+                  }<br>
+                  if ((lyear==true) && (dd>29))<br>
+                  {
+                    document.getElementById('para5').innerHTML=('La date est :' + dd + "/" + mm + "/" + yy);<br>
+                  }<br>
+                  }<br>
+                  }<br>
+                  else<br>
+                  {<br>
+                    document.getElementById('para5').innerHTML=('La date est incorrect');<br>
+                  }<br>
+                  }
+                </p>
+              </code>
+              <div>
+                <button id="buttonOne1" onClick="slide('prev')">Previous</button>
+                <button id="buttonePlus2" onClick="slide('next')">Next</button>
+              </div>
+            </div>
+            <div id="boucle-for" class="page three">
+              <div class="tableMultiple">
+                <p>Afficher la table de multiplication d'un nombre saisi par l'utilisateur dans un input</p>
+              </div>
+              <h2>Table de multiplication</h2>
+              <img src="img/BG0.png" alt="bg1">
+              <div class="multiple">
+                <input id="number" placeholder="Enter the number">
+                <div class="btn2000">
+                  <button id="generer11" onclick="myFunction12()">Generer la table</button>
+                  <button id="clear11" onclick="clearData()">Clear</button>
+                </div>
+                <div id="result"><p id="resultaaaat"></p></div>
+              </div>
+              <div id="code3">
+                <p>
+                  function myFunction(){<br>
+                    var number = Number(document.getElementById('number').value);<br>
+                    var resultat = "";<br>
+                    for( var i = 1; i <= 10; i++){<br>
+                      resultat = resultat + "<p>" + number + "*" + i + "=" + number * i + "<p>";<br>
+                      document.getElementById('result').innerHTML = resultat;<br>
+                    }<br>
+                    document.getElementById('clear').onclick=function(){<br>
+                      location.reload();<br>
+                    }<br>
+                  }
+                </p>
+              </div>
+              <div>
+                <button class="btnmultiple" onClick="slide('prev')">Previous</button>
+                <button class="btnmultiple1" onClick="slide('next')">Next</button>
+              </div>
+            </div>
+            <div id="boucle-while" class="page four">
+              <div class="tableRandom">
+                <p>L’utilisateur doit deviner un nombre entre 1 et 50 que le programme a choisi aléatoirement en 10 tentatives. Quand l’utilisateur entre une valeur, on lui affiche le nombre de tentatives restantes, ainsi qu’un message indiquant si sa réponse est correcte ou pas.</p>
+              </div>
+              <h2>Devine le nombre !</h2>
+              <img src="img/BG0.png" alt="bg1">
+              <div class="random">
+                <div id="tentative">
+                  <p>Votre tentative 10/10 : </p>
+                  <p id="test"></p>
+                </div>
+                <div class="message">
+                  <p id="result2"></p>
+                </div>
+                <div class="number10">
+                  <input id="number2" placeholder="Enter the number">
+                </div>
+                <button id="buttonRandom" onclick="myFunction()">Envoyer</button>
+                <button id="rejouer" onclick="rejouer()">Rejouer</button>
+                <div id="code4">
+                </div>
+              </div>
+              <code id="code5">
+                let random = Math.floor(Math.random() * 50) + 1;<br>
+                  function myFunction(){<br>
+                    var tentative= 0;<br>
+                    document.getElementById('buttonRandom').onclick = function(){<br>
+                      var number = Number(document.getElementById('number2').value);<br>
+                      console.log(number);<br>
+                      if(number == random && tentative<=10){<br>
+                        document.getElementById('result2').innerHTML = 'Bravo';<br>
+                        document.getElementById('result2').style.backgroundColor = '#29C5FE';<br>
+                        document.getElementById('result2').style.color = 'black';<br>
+                        document.getElementById('result2').style.width = 'fit-content';<br>
+                        document.getElementById('result2').style.height = 'fit-content';<br>
+                        tentative++;<br>
+                        document.getElementById('test').innerHTML=tentative;<br>
+                      }<br>
+                  
+                      if(number < random && tentative<=10){<br>
+                        document.getElementById('result2').innerText = 'Nombre est petite';<br>
+                        document.getElementById('result2').style.backgroundColor = 'gray';<br>
+                        document.getElementById('result2').style.width = 'fit-content';<br>
+                        document.getElementById('result2').style.height = 'fit-content';<br>
+                        tentative++;<br>
+                        document.getElementById('test').innerHTML=tentative;<br>
+                      }<br>
+                  
+                      if(number > random && tentative<=10){<br>
+                        document.getElementById('result2').innerHTML = 'Nombre est grande';<br>
+                        document.getElementById('result2').style.backgroundColor = 'gray';<br>
+                        document.getElementById('result2').style.width = 'fit-content';<br>
+                        document.getElementById('result2').style.height = 'fit-content';<br>
+                  
+                        tentative++;<br>
+                        document.getElementById('test').innerHTML=tentative;<br>
+                      }<br>
+                      if(tentative>10){<br>
+                        document.getElementById('test').innerHTML = "Game over";<br>
+                        document.getElementById('test').style.backgroundColor = 'orange';<br>
+                      }<br>
+                    }<br>
+                    document.getElementById('rejouer').onclick = function(){<br>
+                      location.reload();<br>
+                    }<br>
+                  }
+              </code>
+              <div>
+                <button id="buttonTentative1" onClick="slide('prev')">Previous</button>
+                <button id="buttonTentative2" onClick="slide('next')">Next</button>
+              </div>
+            </div>
+            <div id="boucle-imbriquees" class="page five">
+              <div class="etoil">
+                <p>Afficher la table de multiplication d'un nombre saisi par l'utilisateur dans un input</p>
+              </div>
+              <img src="img/BG0.png" alt="bg1">
+              <h2>Etoile</h2>
+              <input id="etoile" type="text" placeholder="Enter the number">
+              <pre id="para"></pre>
+              <button id="btn" onclick="dessinEtoile()">Dessiner</button>
+              <code>
+                <p>
+                  function dessinEtoile(){<br>
+                    document.getElementById('btn').onclick=function(){<br>
+                        let n = document.getElementById('etoile').value;<br>
+                        let string = "";<br>
+                        for (let i = 1; i <= n; i++) {<br>
+                          //============= printing spaces=================<br>
+                          for (let j = n; j > i; j--) {<br>
+                             string += " ";<br>
+                           }<br>
+                          // ==============printing star================<br>
+                          for (let k = 0; k < i-1+1; k++) {<br>
+                             string += "*";<br>
+                           }<br>
+                          string += "\n";<br>
+                        }<br>
+                        document.getElementById('para').innerHTML=`${string}`;<br>
+                    }<br>
+                  }
+                </p>
+              </code>
+              <div id="on">
+                <button id="mm20" onClick="slide('prev')">Previous</button>
+                <button id="mm21" onClick="slide('next')">Next</button>
+              </div>
+            </div>
+            <div id="function" class="page six">
+              <div class="calcul">
+                <p>Afficher la table de multiplication d'un nombre saisi par l'utilisateur dans un input</p>
+              </div>
+              <h2>Calculatrice</h2>
+              <img src="img/BG0.png" alt="bg1">
+              <div class="multiple">
+                <div class="somme">
+                  <div id="inputNumber">
+                    <div class="input">
+                      <input id="numberSomme" type="number" placeholder="Enter the number 1">
+                    </div>
+                    <div class="numberSomme1">
+                      <input id="numberSomme1" type="number" placeholder="Enter the number 2">
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <button id="btn1" onclick="addNumbers()">+</button>
+                    <button id="btn2" onclick="soustractionNumbers()">-</button>
+                    <button id="btn3" onclick="multipleNumbers()" >*</button>
+                    <button id="btn4" onclick="deviserNumbers()">/</button>
+                  </div>
+                  <div class="btn3">
+                    <button id="btn5" onclick="resultatFinal()">=</button>
+                  </div>
+                  <p id="resultatSomme"></p>
+                  <div class="btn4">
+                    <button id="clear">Clear</button>
+                  </div>
+                </div>
+              </div>
+              <code>
+                <p>
+                  function addNumbers(){ <br>
+                    document.getElementById('btn1').onclick = function(){<br>
+                     let x = Number(document.getElementById('numberSomme').value);<br>
+                     let y = Number(document.getElementById('numberSomme1').value);<br>
+                    }<br>
+                    document.getElementById('btn5').onclick = function(){<br>
+                     let x = Number(document.getElementById('numberSomme').value);<br>
+                     let y = Number(document.getElementById('numberSomme1').value);<br>
+                     let z = x + y;<br>
+                    document.getElementById('resultatSomme').innerHTML= z;<br>
+                     }<br>
+                     document.getElementById('clear').onclick = function(){<br>
+                       location.reload();<br>
+                     }<br>
+                  }<br>
+                  // <=====soustraction=====><br>
+                   
+                  function soustractionNumbers(){<br>
+                    document.getElementById('btn2').onclick=function(){<br>
+                      let x = Number(document.getElementById('numberSomme').value);<br>
+                      let y = Number(document.getElementById('numberSomme1').value);<br>
+                    }<br>
+                    document.getElementById('btn5').onclick=function(){<br>
+                      let x = Number(document.getElementById('numberSomme').value);<br>
+                      let y = Number(document.getElementById('numberSomme1').value);<br>
+                      let z = x - y;<br>
+                      document.getElementById('resultatSomme').innerHTML= z;<br>
+                    }<br>
+                    document.getElementById('clear').onclick=function(){<br>
+                      location.reload();<br>
+                    }<br>
+                  }<br>
+                   
+                   // <=====multiple======><br>
+                   
+                  function multipleNumbers(){<br>
+                    document.getElementById('btn3').onclick=function(){<br>
+                      let x = Number(document.getElementById('numberSomme').value);<br>
+                      let y = Number(document.getElementById('numberSomme1').value);<br>
+                    }<br>
+                    document.getElementById('btn5').onclick=function(){<br>
+                      let x = Number(document.getElementById('numberSomme').value);<br>
+                      let y = Number(document.getElementById('numberSomme1').value);<br>
+                      let z = x * y;<br>
+                      document.getElementById('resultatSomme').innerHTML=z;<br>
+                    }<br>
+                    document.getElementById('clear').onclick=function(){<br>
+                      location.reload();<br>
+                    }<br>
+                  }<br>
+                   
+                  // <======Diviser======><br>
+                   
+                  function deviserNumbers(){<br>
+                    document.getElementById('btn4').onclick=function(){<br>
+                      let x = Number(document.getElementById('numberSomme').value);<br>
+                      let y = Number(document.getElementById('numberSomme1').value);<br>
+                    }<br>
+                    document.getElementById('btn5').onclick=function(){<br>
+                      let x = Number(document.getElementById('numberSomme').value);<br>
+                      let y = Number(document.getElementById('numberSomme1').value);<br>
+                      let z = x / y;<br>
+                      document.getElementById('resultatSomme').innerHTML=z;<br>
+                    }<br>
+                    if( x == 0 || y == 0){<br>
+                      document.getElementById('resultatSomme').innerHTML='Impossible';<br>
+                    }<br>
+                    document.getElementById('clear').onclick=function(){<br>
+                      location.reload();<br>
+                    }<br>
+                  }<br>
+                </p>
+              </code>
+              <div id="onm3">
+                <button id="onme1" onClick="slide('prev')">Previous</button>
+                <button id="onme2" onClick="slide('next')">Next</button>
+              </div>
+            </div>
+            <div id="recherche-et-suppression" class="page seven">
+              <div class="chaine2">
+                <p>Ecrire un programme Javascript qui demande à l’utilisateur de saisir une phrase dans une zone de texte et un mot dans une autre zone de texte. Le clique sur le bouton rechercher affiche un message si le mot existe dans la phrase ou non. Le clique sur le bouton supprimer permet d’effacer toutes les occurrence du mot dans la phrase ( si le mot existe bien sûr).</p>
+              </div>
+              <img src="img/BG0.png" alt="bg1">
+              <h2>Recherche et suppression dans une chaine</h2>
+              <div class="chaine">
+                <input id="phrase1" type="text" placeholder="Saiser votre phrase"><br>
+                <input id="mots" type="text" placeholder="Saiser le mot"><br>
+                <button id="buttonCheck" onclick="saiserPhrase()">Recherche</button><br>
+                <button id="occurencesBtn" onclick="clearOcurences()">Supprimer</button><br>
+                <button id="reset" onclick="resetAgain()">Clear</button><br>
+              </div>
+              <p id="check"></p>
+              <code class="code6">
+                <p>
+                  function saiserPhrase(){ <br>
+                    document.getElementById('buttonCheck').onclick=function(){<br>
+                      var str = document.getElementById('phrase1').value;<br>
+                      var index = str.indexOf(document.getElementById('mots').value);<br>
+                      if(index !== -1){<br>
+                        document.getElementById('check').innerHTML="Le mot existe!"<br>
+                      } else{<br>
+                        document.getElementById('check').innerHTML="Le mot n'existe pas!";<br>
+                      }<br>
+                    }<br>
+                    document.getElementById('reset').onclick=function(){<br>
+                      location.reload();<br>
+                    }<br>
+                  }<br>
+                  function clearOcurences(){<br>
+                    document.getElementById('occurencesBtn').onclick=function(){<br>
+                    var str = document.getElementById('phrase1').value;<br>
+                    var index = document.getElementById('mots').value;<br>
+                    var ret = str.replace(index, '');<br>
+                    document.getElementById('check').innerHTML=ret;<br>
+                    }<br>
+                    document.getElementById('reset').onclick=function(){<br>
+                      location.reload();<br>
+                    }<br>
+                  }<br>
+                </p>
+              </code>
+              <div id="on1">
+                <button id="onme31" onClick="slide('prev')">Previous</button>
+                <button id="onme41" onClick="slide('next')">Next</button>
+              </div>
+            </div>
+            <div id="nombre-de-voyelles" class="page eight">
+              <div class="chaine6">
+                <p>Ecrire un programme Javascript qui permet de calculer le nombre de voyelles (a,e,i,o,u,y) dans une phrase saisie par l’utilisateur</p>
+              </div>
+              <img src="img/BG0.png" alt="bg1">
+              <h2>Compter le nombre de voyelles dans une chaine</h2>
+              <input id="mots12" name="mots" type="text">
+              <button id="btn30" onclick="findVowels()">Send</button>
+              <p id="para15"></p>
+              <code class="code7">
+                <p>function findVowels(){ <br>
+                  document.getElementById('btn').onclick=function getCount(str){<br>
+                      var str = document.getElementById('mots').value;<br>
+                      var vowelsCount = 1;<br>
+                      const vowels = ['a','e','i','o','u','y'];<br>
+                      for(let char of str){<br>
+                          if(vowels.includes(char)){<br>
+                              document.getElementById('para').innerHTML= "La phrase que vous avez saisi contient de :" + "&nbsp;" + vowelsCount++ + "&nbsp;" + "voyelle(s)";<br>
+                          }<br>
+                      }<br>
+                      return vowelsCount<br>
+                  }<br>
+                  }
+               </p>
+              </code>
+              <div id="on2">
+                <button id="onme4" onClick="slide('prev')">Previous</button>
+                <button id="onme5" onClick="slide('next')">Next</button>
+              </div>
+            </div>
+            <div id="tri-tableau" class="page nine">
+              <div class="chaine8">
+                <p>Ecrire un programme Javascript qui permet de tri un tableau et rechercher un valeur au tableau</p>
+              </div>
+              <img src="img/BG0.png" alt="bg1">
+              <h2>Tri et recherche dans un tableau</h2>
+              <div id="taileees">
+                <label for="taille">Donner la taille du tableau :</label>
+                <input type="text" id="taillee">
+                <button id="done" onclick="laTaille()">Valider</button>
+              </div>
+              <div id="inp98" class="inp21">
+                  <input type="text" id="para16" placeholder="Cellule 1">
+                  <input type="text" id="para2" placeholder="Cellule 2">
+                  <input type="text" id="para3" placeholder="Cellule 3">
+                  <input type="text" id="para4" placeholder="Cellule 4">
+                  <input type="text" id="para6" placeholder="Cellule 5">
+                  <button id="cree2" onclick="addNumber()">Tri</button>
+              </div>
+              <div id="display"></div>
+              <div class="inp2">
+                  <input type="text" id="rech">
+                  <button id="draw" onclick="recherche()">Recherche</button>
+              </div>
+              <div id="display2"></div>
+                <code class="code8">
+                  <p>
+                    function laTaille(){ <br>
+                      let tailles = Number(document.getElementById('taille').value);<br>
+                      if(tailles == document.getElementById('taille').value){<br>
+                        document.getElementById('taille').disabled = true;<br>
+                      }<br>
+                      if (tailles == 1) {<br>
+                        document.getElementById('para').style.display = 'block';<br>
+                        document.getElementById('cree').style.display = 'block';<br>
+                      }<br>
+                      if (tailles == 2) {<br>
+                        document.getElementById('para').style.display = 'block';<br>
+                        document.getElementById('para2').style.display = 'block';<br>
+                        document.getElementById('cree').style.display = 'block';<br>
+                      }<br>
+                    
+                      if (tailles == 3) {<br>
+                        document.getElementById('para').style.display = 'block';<br>
+                        document.getElementById('para2').style.display = 'block';<br>
+                        document.getElementById('para3').style.display = 'block';<br>
+                        document.getElementById('cree').style.display = 'block';<br>
+                      }<br>
+                      if (tailles == 4) {<br>
+                        document.getElementById('para').style.display = 'block';<br>
+                        document.getElementById('para2').style.display = 'block';<br>
+                        document.getElementById('para3').style.display = 'block';<br>
+                        document.getElementById('para4').style.display = 'block';<br>
+                        document.getElementById('cree').style.display = 'block';<br>
+                      }<br>
+                      if (tailles == 5) {<br>
+                        document.getElementById('para').style.display = 'block';<br>
+                        document.getElementById('para2').style.display = 'block';<br>
+                        document.getElementById('para3').style.display = 'block';<br>
+                        document.getElementById('para4').style.display = 'block';<br>
+                        document.getElementById('para5').style.display = 'block';<br>
+                        document.getElementById('cree').style.display = 'block';<br>
+                      }<br>
+                    }<br>
+                    
+                    let words =[];<br>
+                    function addNumber(){<br>
+                      document.getElementById('cree').onclick=function(){<br>
+                        let tailles = Number(document.getElementById('taille').value);<br>
+                        let userAdd = document.getElementById('para').value;<br>
+                        let userAdds = document.getElementById('para2').value;<br>
+                        let userAdds2 = document.getElementById('para3').value;<br>
+                        let userAdds3 = document.getElementById('para4').value;<br>
+                        let userAdds4 = document.getElementById('para5').value;<br>
+                        if(tailles == 1){<br>
+                          words.push(userAdd);<br>
+                          document.getElementById('para').disabled = true;<br>
+                          showUserInfo();<br>
+                        }<br>
+                       if(tailles == 2){<br>
+                          words.push(userAdd);<br>
+                          words.push(userAdds);<br>
+                          document.getElementById('para').disabled = true;<br>
+                          document.getElementById('para2').disabled = true;<br>
+                          showUserInfo();<br>
+                        }<br>
+                        if(tailles == 3){<br>
+                          words.push(userAdd);<br>
+                          words.push(userAdds);<br>
+                          words.push(userAdds2);<br>
+                          document.getElementById('para').disabled = true;<br>
+                          document.getElementById('para2').disabled = true;<br>
+                          document.getElementById('para3').disabled = true;<br>
+                          showUserInfo();<br>
+                        }<br>
+                        if(tailles == 4){<br>
+                          words.push(userAdd);<br>
+                          words.push(userAdds);<br>
+                          words.push(userAdds2);<br>
+                          words.push(userAdds3);<br>
+                          document.getElementById('para').disabled = true;<br>
+                          document.getElementById('para2').disabled = true;<br>
+                          document.getElementById('para3').disabled = true;<br>
+                          document.getElementById('para4').disabled = true;<br>
+                          showUserInfo();<br>
+                        }<br>
+                        if(tailles == 5){<br>
+                          words.push(userAdd);<br>
+                          words.push(userAdds);<br>
+                          words.push(userAdds2);<br>
+                          words.push(userAdds3);<br>
+                          words.push(userAdds4);<br>
+                          document.getElementById('para').disabled = true;<br>
+                          document.getElementById('para2').disabled = true;<br>
+                          document.getElementById('para3').disabled = true;<br>
+                          document.getElementById('para4').disabled = true;<br>
+                          document.getElementById('para5').disabled = true;<br>
+                          showUserInfo();<br>
+                        }<br>
+                      }<br>
+                    }<br>
+                    function showUserInfo(){<br>
+                      let showInfo = "";<br>
+                      //tri ici<br>
+                      function sort(words){<br>
+                        for(var i = 0; i < words.length; i++){<br>
+                          //stocker l'index de l'élément minimum<br>
+                          var min = i; <br>
+                          for(var j = i+1; j < words.length; j++){<br>
+                            if(+words[j] < +words[min]){<br>
+                             // mettre à jour l'index de l'élément minimum<br>
+                             min = j; <br>
+                            }<br>
+                          }<br>
+                          var tmp = words[i];<br>
+                          words[i] = words[min];<br>
+                          words[min] = tmp;<br>
+                        }<br>
+                        document.getElementById('cree').setAttribute('disabled','')<br>
+                    
+                        return words;<br>
+                      };<br>
+                      sort(words);<br>
+                    
+                      for(let i=0;i<words.length;i++){<br>
+                        showInfo +=`<br>
+                          <table style="border-collapse:collapse;margin-top:20px;" border="2"><br>
+                            <tr style="width:100px;height:fit-content;"><br>
+                              <td style="font-size:20px;text-align:center;width:50px;height:50px;margin:0 0 0 10px;">${words[i]}</td><br>
+                            </tr><br>
+                          </table><br>
+                        `;<br>
+                      }<br>
+                      document.getElementById('display').innerHTML = showInfo;<br>
+                      document.getElementById('display').style.display = 'flex';<br>
+                      document.getElementById('display').style.textAlign = 'center';<br>
+                    }<br>
+                    
+                      
+                    
+                    function recherche(){<br>
+                      document.getElementById('draw').onclick=function(){<br>
+                        let mots=document.getElementById('rech').value;<br>
+                        let tab = Array;<br>
+                        tab[0]= document.getElementById('para').value;<br>
+                        tab[1]= document.getElementById('para2').value;<br>
+                        tab[2]= document.getElementById('para3').value;<br>
+                        tab[3]= document.getElementById('para4').value;<br>
+                        tab[4]= document.getElementById('para5').value;<br>
+                        if(mots == tab[0]){<br>
+                          document.getElementById('display2').innerHTML="La valeur existe au tableau";<br>
+                        }<br>
+                        else if(mots == tab[1]){<br>
+                          document.getElementById('display2').innerHTML="La valeur existe au tableau";<br>
+                        }<br>
+                        else if(mots == tab[2]){<br>
+                          document.getElementById('display2').innerHTML="La valeur existe au tableau";<br>
+                        }<br>
+                        else if(mots == tab[3]){<br>
+                          document.getElementById('display2').innerHTML="La valeur existe au tableau";<br>
+                        }<br>
+                        else if(mots == tab[4]){<br>
+                          document.getElementById('display2').innerHTML="La valeur existe au tableau";<br>
+                        }<br>
+                        else{<br>
+                          document.getElementById('display2').innerHTML="La valeur n'existe pas au tableau";<br>
+                        }<br>
+                      }<br>
+                    }</p>
+                </code>
+                <div id="on10">
+                  <button id="onme31" onClick="slide('prev')">Previous</button>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js%22%3E"></script>
+    <script src="course.js"></script>
+</body>
+</html>

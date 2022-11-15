@@ -1,0 +1,2484 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&family=Lato:wght@100&family=Oswald:wght@200;300;700&family=Poppins:wght@100;300;400;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'El Messiri', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #29C5FE;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #043D72;
+  border-radius: 10px;
+}
+
+/* ==============================HEADER======================================== */
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 25%;
+  position: sticky;
+  top: 0;
+  background-color: #29C5FE;
+}
+
+#menu {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin-left: 14px;
+  margin-right: 70px;
+}
+
+#menu ul li {
+  cursor: pointer;
+  border-top: 2px solid #043D72;
+  border-bottom: 2px solid #043D72;
+  border-left: none;
+  border-right: none;
+  margin: 10px 0 0 0;
+  padding: 14px;
+  width: 150px;
+  color: #fff;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+
+}
+
+#menu ul li a:hover {
+  color: #000;
+}
+
+#menu ul li:hover {
+  background-color: #ECECEC;
+  color: #000 !important;
+  transition: 0.4s;
+}
+
+.list-btn {
+  background-color: #29C5FE;
+  color: #000;
+  padding: 14px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 15px;
+  border-top: 2px solid #043D72;
+  border-bottom: 2px solid #043D72;
+  border-left: none;
+  border-right: none;
+  width: 177px;
+  text-align: left;
+  font-weight: bold;
+}
+
+#logo img {
+  width: 70%;
+  height: 10vh;
+}
+
+#logo2 img{
+  width: 70%;
+  height: 10vh;
+  display: none;
+}
+#logo2{
+  margin-left: 33px;
+  margin-top: 20px;
+}
+
+#logo {
+  margin-left: 33px;
+  margin-top: 20px;
+}
+
+.list-btn:hover {
+  background-color: #ECECEC;
+  color: #000;
+  transition: 0.4s;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  left: 74%;
+  background-color: white;
+  width: 180px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+
+.menu-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/* ================================================================================== */
+.dropdown button {
+  padding: 10px;
+  width: 150px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.1s;
+  margin-top: 10px !important;
+}
+
+.dropdown button:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pages {
+  display: flex;
+  width: 1000%;
+  height: 150vh;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.7s;
+  color: #000;
+}
+
+.zero {
+  background: #F7F7F7;
+  height: 150vh;
+}
+
+.one {
+  background: #F7F7F7;
+  height: 150vh;
+}
+
+.two {
+  background: #F7F7F7;
+  height: 150vh;
+}
+
+.three {
+  background: #F7F7F7;
+  height: 150vh;
+}
+
+.four {
+  background: #F7F7F7;
+  height: 150vh;
+}
+
+.five {
+  background: #F7F7F7;
+  height: 150vh;
+}
+.six {
+  background: #F7F7F7;
+  height: 150vh;
+}
+.seven{
+  background: #F7F7F7;
+  height: 150vh;
+}
+.eight{
+  background: #F7F7F7;
+  height: 150vh;
+}
+.nine{
+  background: #F7F7F7;
+  height: 150vh;
+}
+
+/* #multiple{
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+
+} */
+
+#image img {
+  width: 80%;
+  height: 30%;
+}
+
+.zero img {
+  width: 800px;
+  height: 350px;
+  margin-top: -32%;
+}
+
+.zero p {
+  font-size: 15px;
+}
+
+.zero h2 {
+  margin-left: -80%;
+  color: #043D72;
+}
+
+#listTwo {
+  display: flex;
+  margin-top: 20px;
+}
+
+
+
+#listTwo li {
+  font-size: 15px;
+}
+
+.listOne {
+  margin: 0 0 0 50px;
+}
+
+ul #hidden {
+  margin-top: 35px;
+}
+
+.zero .button {
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 250px;
+  font-weight: bold;
+}
+
+/* <===================================pageOne===========================================> */
+
+.permuterNombre {
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: fit-content;
+  margin-top: -4%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+}
+
+.permuterNombre p {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.nombres img {
+  width: 900px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.nombres h2 {
+  font-size: 22px;
+  color: #043D72;
+  margin-top: -45%;
+  margin-left: 35% !important;
+}
+
+.bg2 img,
+.two img,
+.three img,
+.six img,
+.four img,.five img ,.seven img , .eight img , .nine img{
+  width: 90%;
+  height: 50%;
+  margin-top: -3%;
+}
+
+.forme {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.forme #inp1 {
+  margin-left: 50%;
+  margin-top: 30%;
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+}
+
+.forme #inp2 {
+  margin-left: 90%;
+  margin-top: 20%;
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+}
+
+.forme #inp3 {
+  margin-top: 130px;
+  margin-left: 6%;
+  width: 200px;
+  height: 6vh;
+  border: 2px solid #043D72;
+  border-radius: 30px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#code {
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: fit-content;
+  margin-top: 50px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.one button {
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#btnOne {
+  position: relative;
+  left: -80%;
+}
+
+#btnOneplus {
+  position: relative;
+  right: -80%;
+}
+
+#bckg img {
+  width: 250px;
+  height: 250px;
+  margin-top: 30px;
+
+}
+
+#code p {
+  padding: 30px;
+}
+
+/* =====================================page2================================== */
+.two p {
+  font-size: 15px;
+  margin-top: 1%;
+  padding: 10px;
+  margin-left: 5%;
+}
+
+.Validation {
+  background-color: #ECECEC;
+  width: 90%;
+  height: fit-content;
+  margin-top: 3%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 480px;
+
+}
+
+/* .Validation h2{
+  margin-top: -50%;
+  font-size: 22px;
+  color: #043D72 !important;
+} */
+.two img {
+  margin-top: -5%;
+}
+
+.mail form {
+  margin-top: -170%;
+  margin-left: 30%;
+}
+
+.mail form input {
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+}
+
+.mail #mail {
+  margin-top: 100%;
+  margin-left: 5%;
+  width: 200px;
+  height: 6vh;
+  border: 2px solid #043D72;
+  border-radius: 30px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+#code2 {
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: 30vh;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: scroll;
+  margin-top: 30px;
+
+}
+
+#para5 {
+  background-color: #043D72;
+  color: #FF6600;
+  margin-top: -110%;
+  margin-left: 30%;
+  width: 90%;
+}
+
+.two button {
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#buttonOne1 {
+  position: relative;
+  left: -80%;
+}
+
+#buttonePlus2 {
+  position: relative;
+  right: -80%;
+}
+
+/* ========================================PAGE three======================================== */
+.tableMultiple {
+  background-color: #ECECEC;
+  width: 90%;
+  height: 10vh;
+  margin-top: -4%;
+}
+
+.tableMultiple p {
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.multiple {
+  margin-top: -30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#code3 {
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: 30vh;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: 30%;
+  overflow: scroll;
+  padding: 20px;
+}
+
+#number {
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  margin-left: 45%;
+  margin-top: -20%;
+}
+
+.multiple button {
+  width: 150px;
+  height: 6vh;
+  border: 2px solid #043D72;
+  border-radius: 30px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.btn2000{
+  display: flex;
+  margin: 0 0 0 10px;
+  margin-top: 90%;
+}
+#generer {
+  margin-top: 115%;
+  margin-left: -50%;
+}
+
+#clear {
+  margin-left: 50%;
+  margin-top: -18%;
+}
+
+.multiple #result {
+  background-color: #043D72;
+  color: #FF6600;
+  font-weight: bold;
+  width: 90%;
+  height: fit-content;
+  margin-top:-100%;
+  margin-left: 10%;
+  padding: 5px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+}
+
+.btnmultiple,
+.btnmultiple1 {
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.btnmultiple1 {
+  position: relative;
+  right: -80%;
+}
+
+.btnmultiple {
+  position: relative;
+  left: -80%;
+}
+
+.three h2 {
+  font-size: 22px;
+  color: #043D72;
+}
+
+/* =====================================PAGE FOUR======================================= */
+.message p {
+  color: #000;
+  width: 200px;
+  height: 40px;
+  margin-left: 13%;
+  padding: 10px;
+
+}
+
+.tableRandom {
+  background-color: #ECECEC;
+  width: 90%;
+  height: fit-content;
+  margin-top: 3%;
+  padding: 10px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.tableRandom p {
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+.four h2 {
+  font-size: 22px;
+  color: #043D72;
+}
+.number10{
+  margin-top: -70%;
+  margin-left: 30%;
+}
+.number10 input{
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+}
+#tentative{
+  margin-top: -80%;
+  margin-left: 10%;
+  display: flex;
+}
+#tentative p{
+height: fit-content;
+padding: 10px;
+}
+#buttonRandom ,#rejouer{
+  margin-top: 70%;
+  width: 150px;
+  height: 6vh;
+  border: 2px solid #043D72;
+  border-radius: 30px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+#code5{
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: 30vh;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: scroll;
+  padding: 20px;
+  margin-top: 5%;
+}
+#buttonTentative1 , #buttonTentative2{
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+#buttonTentative1{
+  position: relative;
+  left: -80%;
+}
+#buttonTentative2{
+  position: relative;
+  right: -80%;
+}
+
+
+
+/* ===================================PAGE six=========================================== */
+
+.calcul {
+  background-color: #ECECEC;
+  width: 90%;
+  height: 10vh;
+  margin-top: -1%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.calcul p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.six h2 {
+  font-size: 22px;
+  color: #043D72;
+}
+
+.somme {
+  margin-top: -150%;
+}
+
+.somme button {
+  width: 200px;
+  height: 6vh;
+  border: 2px solid #043D72;
+  border-radius: 30px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn{
+  margin-left: -10%;
+  margin-top: -105%;
+}
+
+.somme #btn1,
+#btn2,
+#btn3,
+#btn4
+{
+  width: 40px;
+  height: fit-content;
+  border: 2px solid #043D72;
+  border-radius: 15px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px;
+  margin-top: 16%;
+  font-size: 25px;
+  cursor: pointer;
+}
+#btn5{
+  width: 170px;
+  height: fit-content;
+  border: 2px solid #043D72;
+  border-radius: 30px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px;
+  margin-top: 8%;
+  margin-left: -10%;
+  cursor: pointer;
+}
+
+
+
+.somme input {
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+}
+
+.input{
+  margin-top: 70%;
+  margin-left: -15%;
+}
+
+#numberSomme{
+  margin-top: 50%;
+}
+#numberSomme1{
+margin-bottom: 70%;
+margin-left: 90%;
+}
+.somme p{
+/* margin-top: -0%; */
+background-color: #29C5FE;
+color: #000;
+width: 70%;
+height: 5vh;
+height: fit-content;
+margin-top: 5%;
+font-size: 20px;
+padding: 10px;
+margin-left: -5%;
+text-align: center;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+#clear{
+  margin-top: 50%;
+  margin-left: -20%;
+}
+#inputNumber{
+  margin-top: 50%;
+}
+.somme{
+  margin-left: 10%;
+  margin-top: -150%;
+}
+.six code{
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: 30vh;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: scroll;
+  padding: 20px;
+  margin-top: 6%;
+}
+#onm3 button{
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+#onme1{
+  position: relative;
+  left: -80%;
+}
+#onme2{
+  position: relative;
+  right: -80%;
+}
+/* =========================page5======================= */
+#btn{
+    width: 150px;
+    height: 6vh;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 22%;
+}
+
+.five h2{
+    font-size: 30px;
+    color: #043D72;
+    margin-top: -46%;
+}
+.etoil {
+  background-color: #ECECEC;
+  width: 90%;
+  height: 10vh;
+  margin-top: -3%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 10px;
+}
+.etoil p{
+  margin-top: 2%;
+}
+.five input{
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  margin-top: 5%;
+}
+.five #para{
+  color: #FF6600;
+  margin-left: 4%;
+}
+.five code{
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: 30vh;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: scroll;
+  padding: 20px;
+  margin-top: 26%;
+}
+
+#on button{
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#mm20{
+  position: relative;
+  left: -80%;
+}
+#mm21{
+  position: relative;
+  right: -80%;
+}
+
+/* ===================================Page 7================================================================ */
+
+
+.seven h2{
+  font-size: 18px;
+  color: #043D72;
+  margin-top: -47%;
+}
+.chaine2{
+  background-color: #ECECEC;
+  width: 90%;
+  height: fit-content;
+  margin-top: 2%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 10px;
+}
+.chaine2 p{
+  margin-top: 2%;
+}
+.chaine{
+  margin-top: 5%;
+}
+
+.chaine input{
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#buttonCheck,#occurencesBtn,#reset{
+  width: 150px;
+  height: 6vh;
+  border: 2px solid #043D72;
+  border-radius: 30px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.code6{
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: 30vh;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: scroll;
+  padding: 20px;
+  margin-top: 3%;
+}
+
+.seven button{
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#onme31{
+  position: relative;
+  left: -80% !important;
+}
+#onme41{
+  position: relative;
+  right: -80% !important;
+}
+#check{
+  margin-left: -5%;
+  margin-top: -2%;
+  padding: 15px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* ==================================PAGE EIGHT======================================== */
+.code7{
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: 30vh;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: scroll;
+  padding: 20px;
+  margin-top: 22%;
+}
+.chaine6{
+  background-color: #ECECEC;
+  width: 90%;
+  height: fit-content;
+  margin-top: 2%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+input{
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  margin-top: 8%;
+}
+
+#btn30{
+  width: fit-content;
+  height: 6vh;
+  border: 2px solid #043D72;
+  border-radius: 30px;
+  color: #FF6600;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.eight h2{
+  font-size: 17px;
+  color: #043D72;
+  margin-top: -46.5%;
+}
+#para15{
+  margin-top: 5%;
+  margin-left: 23%;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #FF6600;
+  background-color: #043D72;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+}
+.eight button{
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#onme4{
+  position: relative;
+  left: -80%;
+}
+#onme5{
+  position: relative;
+  right: -80%;
+}
+
+/* ======================================PAGE NEN =========================================*/
+
+.code8{
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  width: 90%;
+  height: 30vh;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: scroll;
+  padding: 20px;
+  margin-top: 18%;
+}
+
+.nine #taille{
+  width: 200px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.nine #para16,#para2,#para3,#para4,#para6,#rech{
+  width: 80px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.nine #taileees input{
+  width: 80px;
+  height: 6vh;
+  padding: 5px;
+  border: 2px solid #043D72;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+
+}
+
+.nine h2{
+  font-size: 20px;
+  color: #043D72;
+  margin-top: -46.5%;
+}
+
+.chaine8{
+  background-color: #ECECEC;
+  width: 90%;
+  height: fit-content;
+  margin-top: -6%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.inp21{
+margin-left: 25%;
+display: flex;
+}
+.inp21 input,.inp21 button{
+  display: none;
+}
+
+#cree2 , #done ,#draw{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #FF6600;
+  background-color: #043D72;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#cree2{
+  margin-top: 9%;
+  margin-left: 5%;
+}
+#display2{
+  margin-top: 8%;
+  background-color: #FF6600;
+  color: #043D72;
+  padding: 10px;
+  width: fit-content;
+  font-weight: bold;
+}
+#onme31{
+  background-color: #29C5FE;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px 2px 2px 2px solid #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-right: -50px;
+}
+
+#taileees{
+  margin-left: 15%;
+}
+
+/* =================================================================== */
+
+@media screen and (min-width: 1400px){
+
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30%;
+    position: sticky;
+    top: 0;
+    background-color: #FF6600;
+  }
+
+  #logo2 img {
+    display: block;
+    width: 70%;
+    height: 10vh;
+  }
+  #logo img{
+    display: none;
+  }
+  .list-btn {
+    background-color: #FF6600;
+    color: #000;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-top: 2px solid #043D72;
+    border-bottom: 2px solid #043D72;
+    border-left: none;
+    border-right: none;
+    width: 230px;
+    text-align: left;
+    font-weight: bold;
+  }
+  #menu {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #menu ul {
+    list-style-type: none;
+    margin-left: 14px;
+    margin-right: 70px;
+  }
+  
+  #menu ul li {
+    cursor: pointer;
+    border-top: 2px solid #043D72;
+    border-bottom: 2px solid #043D72;
+    border-left: none;
+    border-right: none;
+    margin: 10px 0 0 0;
+    padding: 14px;
+    width: 200px;
+    color: #fff;
+  }
+  
+  #menu ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+  
+  }
+  
+  #menu ul li a:hover {
+    color: #000;
+  }
+  
+  #menu ul li:hover {
+    background-color: #ECECEC;
+    color: #000 !important;
+    transition: 0.4s;
+  }
+  .dropdown button {
+    padding: 10px;
+    width:200px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.1s;
+    margin-top: 10px !important;
+    font-size: 25px;
+  }
+  
+  .dropdown button:hover {
+    transform: scale(1.05);
+  }
+  
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .pages {
+    display: flex;
+    width: 1000%;
+    height: 150vh;
+    box-sizing: border-box;
+  }
+  
+  .page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.7s;
+    color: #000;
+  }
+  
+  .zero {
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  
+  .one {
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  
+  .two {
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  
+  .three {
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  
+  .four {
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  
+  .five {
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  .six {
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  .seven{
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  .eight{
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  .nine{
+    background: #F7F7F7;
+    height: 150vh;
+  }
+  
+  /* #multiple{
+      box-sizing: border-box;
+      background-color: #000;
+      color: #fff;
+      width: fit-content;
+      height: fit-content;
+      padding: 30px;
+  
+  } */
+  
+  #image img {
+    width: 90%;
+    height: 40%;
+  }
+  
+  .zero img {
+    width: 800px;
+    height: 350px;
+    margin-top: -42%;
+  }
+  
+  .zero p {
+    font-size: 25px;
+  }
+  
+  .zero h2 {
+    margin-left: -80%;
+    color: #043D72;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  #listTwo {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  
+  
+  #listTwo li {
+    font-size: 18px;
+  }
+  
+  .listOne {
+    margin: 0 0 0 50px;
+  }
+  
+  ul #hidden {
+    margin-top: 35px;
+  }
+  
+  .zero .button {
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 250px;
+    font-weight: bold;
+  }
+  
+  /* <===================================pageOne===========================================> */
+  
+  .permuterNombre {
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: -15%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+  }
+  
+  .permuterNombre p {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    font-size: 18px;
+  }
+  
+  .nombres img {
+    width: 900px;
+    height: 400px;
+    margin-top: 20px;
+  }
+  
+  .nombres h2 {
+    font-size: 24px;
+    color: #FF6600;
+    margin-top: -45%;
+    margin-left: 34%;
+  }
+  
+  .bg2 img,
+  .two img,
+  .three img,
+  .six img,
+  .four img,.five img ,.seven img , .eight img , .nine img{
+    width: 90%;
+    height: 50%;
+    margin-top: -3%;
+  }
+  
+  .forme {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .forme #inp1 {
+    margin-left: 50%;
+    margin-top: 30%;
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+  }
+  
+  .forme #inp2 {
+    margin-left: 90%;
+    margin-top: 20%;
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+  }
+  
+  .forme #inp3 {
+    margin-top: 130px;
+    margin-left: 6%;
+    width: 200px;
+    height: 6vh;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  #code {
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .one button {
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  #btnOne {
+    position: relative;
+    left: -80%;
+  }
+  
+  #btnOneplus {
+    position: relative;
+    right: -80%;
+  }
+  
+  #bckg img {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+  
+  }
+  
+  #code p {
+    padding: 30px;
+  }
+  
+  /* =====================================page2================================== */
+  .two p {
+    font-size: 20px;
+    margin-top: 1%;
+    padding: 5px;
+    margin-left: 5%;
+  }
+  
+  .Validation {
+    background-color: #ECECEC;
+    width: 93%;
+    height: fit-content;
+    margin-top: -1%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 500px;
+  
+  }
+  
+  /* .Validation h2{
+    margin-top: -50%;
+    font-size: 22px;
+    color: #043D72 !important;
+  } */
+  .two img {
+    margin-top: -5%;
+  }
+  
+  .mail form {
+    margin-top: -230%;
+    margin-left: 30%;
+  }
+  
+  .mail form input {
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+  }
+  
+  .mail #mail {
+    margin-top: 170%;
+    margin-left: 5%;
+    width: 200px;
+    height: 6vh;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .two h2{
+    margin-top: -45%;
+    font-size: 24px !important;
+    color: #FF6600 !important;
+  }
+  
+  #code2 {
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: scroll;
+    margin-top: 30px;
+  
+  }
+  
+  #para5 {
+    background-color: #FF6600;
+    color: #043D72;
+    margin-top: -190%;
+    margin-left: 30%;
+    width: 90%;
+  }
+  
+  .two button {
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  #buttonOne1 {
+    position: relative;
+    left: -80%;
+  }
+  
+  #buttonePlus2 {
+    position: relative;
+    right: -80%;
+  }
+
+  
+  /* ========================================PAGE three======================================== */
+  .tableMultiple {
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: -4%;
+  }
+  
+  .tableMultiple p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .multiple {
+    margin-top: -30%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #code3 {
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 30%;
+    overflow: scroll;
+    padding: 20px;
+  }
+  
+  #number {
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    margin-left: 45%;
+    margin-top: -48% !important;
+  }
+  
+  .multiple button {
+    width: 150px;
+    height: 6vh;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10%;
+  }
+  .btn2000{
+    display: flex;
+    margin: 0 0 0 10px;
+    margin-top: 90%;
+  }
+  #generer {
+    margin-top: 130%;
+    margin-left: -50%;
+  }
+  
+  #clear {
+    margin-left: 50%;
+    margin-top: -18%;
+  }
+  
+  .multiple #result {
+    background-color: #FF6600;
+    color: #043D72;
+    font-weight: bold;
+    width: 90%;
+    height: fit-content;
+    margin-top:-100%;
+    margin-left: 10%;
+    padding: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+  }
+  
+  .btnmultiple,
+  .btnmultiple1 {
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  .btnmultiple1 {
+    position: relative;
+    right: -80%;
+  }
+  
+  .btnmultiple {
+    position: relative;
+    left: -80%;
+  }
+  
+  .three h2 {
+    font-size: 25px;
+    color: #FF6600;
+  }
+  
+  /* =====================================PAGE FOUR======================================= */
+  .message p {
+    color: #000;
+    width: 200px;
+    height: 40px;
+    margin-left: 13%;
+    padding: 10px;
+  
+  }
+  
+  .tableRandom {
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: 3%;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .tableRandom p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  .four h2 {
+    font-size: 25px;
+    color: #FF6600;
+  }
+  .number10{
+    margin-top: -70% !important;
+    margin-left: 30%;
+  }
+  .number10 input{
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+  }
+  #tentative{
+    margin-top: -120% !important;
+    margin-left: 10%;
+    display: flex;
+  }
+  #tentative p{
+  height: fit-content;
+  padding: 10px;
+  }
+  #buttonRandom ,#rejouer{
+    margin-top: 100%;
+    width: 150px;
+    height: 6vh;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+  }
+  #code5{
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: scroll;
+    padding: 20px;
+    margin-top: 5%;
+  }
+  #buttonTentative1 , #buttonTentative2{
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  #buttonTentative1{
+    position: relative;
+    left: -80%;
+  }
+  #buttonTentative2{
+    position: relative;
+    right: -80%;
+  }
+  
+  
+  
+  /* ===================================PAGE six=========================================== */
+  
+  .calcul {
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: -1%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .calcul p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .six h2 {
+    font-size: 28px;
+    color: #FF6600;
+    margin-top: 2%;
+  }
+  
+  .somme {
+    margin-top: -150%;
+  }
+  
+  .somme button {
+    width: 200px;
+    height: 6vh;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .btn{
+    margin-left: -10%;
+    margin-top: -105%;
+  }
+  
+  .somme #btn1,
+  #btn2,
+  #btn3,
+  #btn4
+  {
+    width: 40px;
+    height: fit-content;
+    border: 2px solid #043D72;
+    border-radius: 15px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px;
+    margin-top: 16%;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  #btn5{
+    width: 170px;
+    height: fit-content;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px;
+    margin-top: 8%;
+    margin-left: -10%;
+    cursor: pointer;
+  }
+  
+  .somme input {
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+  }
+  
+  .input{
+    margin-top: 70%;
+    margin-left: -15%;
+  }
+  
+  #numberSomme{
+    margin-top: 50%;
+  }
+  #numberSomme1{
+  margin-bottom: 70%;
+  margin-left: 90%;
+  }
+  .somme p{
+  /* margin-top: -0%; */
+  background-color: #FF6600;
+  color: #000;
+  width: 70%;
+  height: 5vh;
+  height: fit-content;
+  margin-top: 5%;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: -5%;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  }
+  #clear{
+    margin-top: 50%;
+    margin-left: -20%;
+  }
+  #inputNumber{
+    margin-top: 50%;
+  }
+  .somme{
+    margin-left: 10%;
+    margin-top: -150%;
+  }
+  .six code{
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: scroll;
+    padding: 20px;
+    margin-top: 6%;
+  }
+  #onm3 button{
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  #onme1{
+    position: relative;
+    left: -80%;
+  }
+  #onme2{
+    position: relative;
+    right: -80%;
+  }
+  /* =========================page5======================= */
+  #btn{
+      width: 150px;
+      height: 6vh;
+      border: 2px solid #043D72;
+      border-radius: 30px;
+      color: #FF6600;
+      font-weight: bold;
+      background-color: #fff;
+      padding: 5px;
+      cursor: pointer;
+      position: relative;
+      top: 22%;
+  }
+  
+  .five h2{
+      font-size: 30px;
+      color: #FF6600;
+      margin-top: -51%;
+  }
+  .etoil {
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: -5%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 10px;
+  }
+  .etoil p{
+    margin-top: 1%;
+    font-size: 20px;
+  }
+  .five input{
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .five #para{
+    color: #FF6600;
+    margin-left: 4%;
+  }
+  .five code{
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: scroll;
+    padding: 20px;
+    margin-top: 32%;
+  }
+  
+  #on button{
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  #mm20{
+    position: relative;
+    left: -80%;
+  }
+  #mm21{
+    position: relative;
+    right: -80%;
+  }
+  
+  /* ===================================Page 7================================================================ */
+  
+  
+  .seven h2{
+    font-size: 24px;
+    color: #FF6600;
+    margin-top: -52%;
+  }
+  .chaine2{
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: 2%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 10px;
+  }
+  .chaine2 p{
+    margin-top: 2%;
+    font-size: 20px;
+  }
+  .chaine{
+    margin-top: 5%;
+  }
+  
+  .chaine input{
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #buttonCheck,#occurencesBtn,#reset{
+    width: 150px;
+    height: 6vh;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .code6{
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: scroll;
+    padding: 20px;
+    margin-top: 3%;
+  }
+  
+  #on1 button{
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  #onme3{
+    position: relative;
+    left: -80%;
+  }
+  #onme4{
+    position: relative;
+    right: -80%;
+  }
+  #check{
+    margin-left: -5%;
+    margin-top: 9%;
+    padding: 15px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  /* ==================================PAGE EIGHT======================================== */
+  .code7{
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: scroll;
+    padding: 20px;
+    margin-top: 22%;
+  }
+  .chaine6{
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: 2%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 10px;
+  }
+  .chaine6 p{
+    font-size: 20px;
+  }
+  
+  input{
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    margin-top: 8%;
+  }
+  
+  #btn30{
+    width: fit-content;
+    height: 6vh;
+    border: 2px solid #043D72;
+    border-radius: 30px;
+    color: #FF6600;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .eight h2{
+    font-size: 20px;
+    color: #FF6600;
+    margin-top: -49.5%;
+  }
+  #para15{
+    margin-top: 5%;
+    margin-left: 23%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #FF6600;
+    background-color: #043D72;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+  }
+  #onme4 ,#onme5{
+    background-color: #FF6600;
+    color: #000;
+  }
+  
+  /* ======================================PAGE NEN =========================================*/
+  
+  .code8{
+    box-sizing: border-box;
+    background-color: #ECECEC;
+    width: 90%;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: scroll;
+    padding: 20px;
+    margin-top: 25%;
+  }
+  
+  .nine #taille{
+    width: 200px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    margin-top: 1%;
+  }
+  .chaine8 p{
+    font-size: 20px;
+  }
+  
+  .nine #para16,#para2,#para3,#para4,#para6,#rech{
+    width: 80px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    margin-top: 8%;
+  }
+  
+  .nine #taileees input{
+    width: 80px;
+    height: 6vh;
+    padding: 5px;
+    border: 2px solid #043D72;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+  
+  }
+  
+  .nine h2{
+    font-size: 23px;
+    color: #FF6600;
+    margin-top: -52.5%;
+  }
+  
+  .chaine8{
+    background-color: #ECECEC;
+    width: 90%;
+    height: fit-content;
+    margin-top: -6%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .inp21{
+  margin-left: 25%;
+  display: flex;
+  }
+  .inp21 input,.inp21 button{
+    display: none;
+  }
+  
+  #cree2 , #done ,#draw{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #FF6600;
+    background-color: #043D72;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  #cree2{
+    margin-top: 9%;
+    margin-left: 5%;
+  }
+  #display2{
+    margin-top: 8%;
+    background-color: #FF6600;
+    color: #043D72;
+    padding: 10px;
+    width: fit-content;
+    font-weight: bold;
+  }
+  #onme31{
+    background-color: #FF6600;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px 2px 2px 2px solid #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+}
